@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Planetas</title>
+</head>
+<body>
+    <h1>Bem vindos ao Torneio do Poder</h1>
+    
+    <h3>Planetas:</h3>
+    <br>
+    <br>
+	
+	<tr th:each="planet: ${planets}">
+    	<span th:text="${planet.name}"></span>
+    	<span th:text="${planet.race}"></span>
+    	<span th:text="${planet.universe}"></span>
+		<br>
+	</tr>
+	
+</body>
+</html>
